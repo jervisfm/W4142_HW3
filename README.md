@@ -17,4 +17,4 @@ z: 1 to 125
 How to Run
 ==========
 
-$ python montecarlo.py
+`$ python montecarlo.py`
