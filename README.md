@@ -13,3 +13,8 @@ x: 0 to 2
 y: -1 to 1
 z: 1 to 125
 
+
+How to Run
+==========
+
+$ python montecarlo.py
