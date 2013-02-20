@@ -1,6 +1,6 @@
-Jervis Muindi
-Numerical Algorithms and Complexity
-Homework 3
+Jervis Muindi ;
+Numerical Algorithms and Complexity ;
+Homework 3 ;
 
 Introduction
 ============
