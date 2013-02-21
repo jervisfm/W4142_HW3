@@ -20,10 +20,13 @@ def run_monte_carlo():
     z0 = 1
     z1 = 125
 
-    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6]
+    # Exact ans computed here: http://goo.gl/FjS3a
+    exact_ans = 1.471152
+    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6, 10 ** 7]
     for n in sample_nos:
         val = monte_carlo(n,x0,x1,y0,y1,z0,z1)
-        print "For N = %d, Value is %f" % (n, val)
+        error = abs(val - exact_ans)
+        print "For N = %d, Value is %f. Error = %f" % (n, val, error)
 
 
 def monte_carlo(n,x0,x1,y0,y1,z0,z1):
@@ -45,18 +48,6 @@ def monte_carlo(n,x0,x1,y0,y1,z0,z1):
 def cube_volume(x0,x1,y0,y1,z0,z1):
     return abs(x0-x1) * abs(y0-y1) * abs(z0-z1)
 
-def random_vector(size, start, end):
-    if size == 0:
-        return []
-
-    if size < 0:
-        size = abs(size)
-
-    result = []
-    for x in xrange(0,size,1):
-        val = random.uniform(start,end)
-        result.append(val)
-    return result
 
 def main():
     run_monte_carlo()

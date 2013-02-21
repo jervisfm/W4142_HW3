@@ -1,6 +1,7 @@
 __author__ = 'Jervis'
 
 import unittest
+from util import *
 from montecarlo import *
 
 class MyTestCase(unittest.TestCase):
