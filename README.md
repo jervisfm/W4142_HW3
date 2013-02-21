@@ -1,5 +1,6 @@
 Jervis Muindi   
 Numerical Algorithms and Complexity    
+February 2013  
 Homework 3    
 
 Introduction
@@ -18,3 +19,8 @@ How to Run
 ==========
 
 `$ python montecarlo.py`
+
+
+Results
+=======
+

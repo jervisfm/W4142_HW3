@@ -1,4 +1,5 @@
 from math import exp
+import random
 
 __author__ = 'Jervis Muindi'
 
@@ -7,7 +8,9 @@ def hello():
 
 def f(x,y,z):
     # x^2*y + exp(-z)
+
     return x*x*y + exp(-z)
+
 
 def run_monte_carlo():
     x0 = 0
@@ -21,12 +24,14 @@ def run_monte_carlo():
 
     # Exact ans computed here: http://goo.gl/FjS3a
     exact_ans = 1.471152
-    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6, 10 ** 7]
+    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6]
+    f = open('data.csv', 'w')
     for n in sample_nos:
         val = monte_carlo(n,x0,x1,y0,y1,z0,z1)
         error = abs(val - exact_ans)
+        f.write("%d,%f\n" % (n, error))
         print "For N = %d, Value is %f. Error = %f" % (n, val, error)
-
+    f.close()
 
 def monte_carlo(n,x0,x1,y0,y1,z0,z1):
     """
