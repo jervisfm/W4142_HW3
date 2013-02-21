@@ -14,7 +14,6 @@ def f(x,y,z):
     return x*x*y + exp(-z)
 
 def run_monte_carlo():
-    n = 3
     x0 = 0
     x1 = 2
 
@@ -23,7 +22,12 @@ def run_monte_carlo():
 
     z0 = 1
     z1 = 125
-    return monte_carlo(n,x0,x1,y0,y1,z0,z1)
+
+    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6]
+    for n in sample_nos:
+        val = monte_carlo(n,x0,x1,y0,y1,z0,z1)
+        print "For N = %d, Value is %f" % (n, val)
+
 
 def monte_carlo(n,x0,x1,y0,y1,z0,z1):
     """
@@ -34,11 +38,11 @@ def monte_carlo(n,x0,x1,y0,y1,z0,z1):
     volume = cube_volume(x0,x1,y0,y1,z0,z1)
     total = 0
     for i in xrange(0,n,1):
-        x = random_vector(1, x0, x1)
-        y = random_vector(1, y0, y1)
-        z = random_vector(1, z0, z1)
+        x = random.uniform(x0, x1)
+        y = random.uniform(y0, y1)
+        z = random.uniform(z0, z1)
         total += f(x,y,z)
-    result = cube_volume * (total / n)
+    result = volume * (total / n)
     return result
 
 def cube_volume(x0,x1,y0,y1,z0,z1):
@@ -59,7 +63,11 @@ def random_vector(size, start, end):
 
 def t():
     return [ 10, 20, 30]
+
 def main():
+    run_monte_carlo()
+
+def test_main():
     x = 2
     y = 3
     z = 3
@@ -77,7 +85,5 @@ def main():
     print random.uniform(0,1)
 
 if  __name__ == '__main__':
+    #test_main()
     main()
-
-#main()
-
