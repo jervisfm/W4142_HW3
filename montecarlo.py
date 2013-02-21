@@ -61,29 +61,8 @@ def random_vector(size, start, end):
         result.append(val)
     return result
 
-def t():
-    return [ 10, 20, 30]
-
 def main():
     run_monte_carlo()
 
-def test_main():
-    x = 2
-    y = 3
-    z = 3
-    print "f(x,y,z) is %f" % (f(x,y,z))
-
-    for x in xrange(0,10,1):
-        r = random.uniform(0,20)
-        print x
-
-    l = [1, 2, 3, 4, 5, len([2])]
-    #l.append(6)
-
-    print l
-    print t()
-    print random.uniform(0,1)
-
 if  __name__ == '__main__':
-    #test_main()
     main()
