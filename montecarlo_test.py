@@ -16,7 +16,16 @@ class MyTestCase(unittest.TestCase):
         ans = 10 * 5 * 100
         self.assertEqual(val, ans, "volumes computation failed:  %f vs %f " % (val,ans))
         self.assertEqual(True, True)
-        
+
+    def test_random_vector(self):
+        size = 10
+        start = 0
+        end = 1
+        list = random_vector(size, start, end)
+        self.assertTrue(len(list) == size, "Vector not of right size")
+        for x in xrange(0,size,1):
+            val = list[x]
+            self.assertTrue(val >= start and val <= end, "values in vector out of range")
 
 if __name__ == '__main__':
     unittest.main()
