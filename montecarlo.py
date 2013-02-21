@@ -1,8 +1,5 @@
 from math import exp
-from random import randint, randrange
 import random
-import subprocess
-from time import localtime
 
 __author__ = 'Jervis Muindi'
 
