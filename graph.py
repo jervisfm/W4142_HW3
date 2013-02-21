@@ -1,6 +1,7 @@
 from math import sqrt
 from string import split
 import matplotlib.pyplot as plt
+from matplotlib.pyplot import figure
 import numpy as np
 from matplotlib.mlab import stineman_interp
 
@@ -29,6 +30,7 @@ def plot_file(file):
         line = f.readline()
 
 
+    fig = figure()
     plt.xlabel('Error')
     plt.ylabel('No Samples')
     print x
@@ -38,6 +40,7 @@ def plot_file(file):
     plt.plot(x, y, 'r--', x,y, 'bo')
 
     plt.show()
+    fig.savefig('graph.png')
 
 
 def test():
