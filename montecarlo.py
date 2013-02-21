@@ -1,5 +1,4 @@
 from math import exp
-import random
 
 __author__ = 'Jervis Muindi'
 

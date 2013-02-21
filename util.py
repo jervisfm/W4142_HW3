@@ -1,5 +1,5 @@
 __author__ = 'Jervis'
-
+import random
 
 
 def random_vector(size, start, end):
