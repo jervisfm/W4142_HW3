@@ -12,9 +12,9 @@ x^2*y + e^(-z) dxdyzdz where the limits of integration are:
 
 x: 0 to 2
 y: -1 to 1
-z: 1 to 125  
+z: 1 to 1.5  
 
-I evaluated this integral using  [Wolfram Alpha](http://goo.gl/FjS3a) and I got a value of 1.471152  
+I evaluated this integral using  [Wolfram Alpha](http://goo.gl/YM465) and I got a value of 0.578997
 
 
 How to Run
