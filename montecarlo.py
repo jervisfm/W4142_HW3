@@ -24,7 +24,7 @@ def run_monte_carlo():
 
     # Exact ans computed here: http://goo.gl/YM465
     exact_ans = 0.578997
-    sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6]
+    sample_nos = [10 ** 2, 10 ** 3, 10 ** 4, 10 ** 5, 10 ** 6]
     f = open('data.csv', 'w')
     for n in sample_nos:
         val = monte_carlo(n,x0,x1,y0,y1,z0,z1)
