@@ -20,10 +20,10 @@ def run_monte_carlo():
     y1 = 1
 
     z0 = 1
-    z1 = 125
+    z1 = 1.5
 
-    # Exact ans computed here: http://goo.gl/FjS3a
-    exact_ans = 1.471152
+    # Exact ans computed here: http://goo.gl/YM465
+    exact_ans = 0.578997
     sample_nos = [10 ** 2, 10 ** 4, 10 ** 5, 10 ** 6]
     f = open('data.csv', 'w')
     for n in sample_nos:
