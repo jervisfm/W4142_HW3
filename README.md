@@ -25,11 +25,12 @@ How to Run
 
 A Sample Run
 =============
-For N = 100, Value is 9.031993. Error = 7.560841  
-For N = 10000, Value is 1.756343. Error = 0.285191 
-For N = 100000, Value is 1.231444. Error = 0.239708 
-For N = 1000000, Value is 1.706399. Error = 0.235247 
-
+For N = 100, Value is 0.491106. Error = 0.087891
+For N = 1000, Value is 0.591232. Error = 0.012235
+For N = 10000, Value is 0.570405. Error = 0.008592
+For N = 100000, Value is 0.585101. Error = 0.006104
+For N = 1000000, Value is 0.578495. Error = 0.000502
+ 
 
 Discussion
 ===========
@@ -39,7 +40,7 @@ The theory states that this reduction in error should vary according to 1 / Sqrt
 
 Using the collected data to make a plot of Error Vs # of Samples, We get a plot like this:
 
-![Graph](./graph.png "Graph")
+![Graph](./graph_final.png "Graph")
 
 
 From the plot, we see that the rate at which the error decreases follows a 1 / Sqrt(N) trend.  
