@@ -25,11 +25,11 @@ How to Run
 
 A Sample Run
 =============
-For N = 100, Value is 0.756653. Error = 0.108012
-For N = 1000, Value is 0.837359. Error = 0.027306
-For N = 10000, Value is 0.868746. Error = 0.004081
-For N = 100000, Value is 0.862611. Error = 0.002054
-For N = 1000000, Value is 0.862637. Error = 0.002028
+For N = 100, Value is 0.756653. Error = 0.108012  
+For N = 1000, Value is 0.837359. Error = 0.027306  
+For N = 10000, Value is 0.868746. Error = 0.004081  
+For N = 100000, Value is 0.862611. Error = 0.002054  
+For N = 1000000, Value is 0.862637. Error = 0.002028  
  
 
 Discussion
