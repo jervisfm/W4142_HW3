@@ -13,17 +13,17 @@ def f(x,y,z):
 
 
 def run_monte_carlo():
-    x0 = 0
-    x1 = 2
+    x0 = 1
+    x1 = 1.5
 
     y0 = -1
     y1 = 1
 
-    z0 = 1
-    z1 = 1.5
+    z0 = 0
+    z1 = 2
 
-    # Exact ans computed here: http://goo.gl/YM465
-    exact_ans = 0.578997
+    # Exact ans computed here: http://goo.gl/PJI2t
+    exact_ans = 0.864665
     sample_nos = [10 ** 2, 10 ** 3, 10 ** 4, 10 ** 5, 10 ** 6]
     f = open('data.csv', 'w')
     for n in sample_nos:
