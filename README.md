@@ -14,7 +14,7 @@ x: 0 to 2
 y: -1 to 1
 z: 1 to 1.5  
 
-I evaluated this integral using  [Wolfram Alpha](http://goo.gl/YM465) and I got a value of 0.578997
+I evaluated this integral using  [Wolfram Alpha](http://goo.gl/eLNDk) and I got a value of 0.862637
 
 
 How to Run
@@ -25,11 +25,11 @@ How to Run
 
 A Sample Run
 =============
-For N = 100, Value is 0.491106. Error = 0.087891
-For N = 1000, Value is 0.591232. Error = 0.012235
-For N = 10000, Value is 0.570405. Error = 0.008592
-For N = 100000, Value is 0.585101. Error = 0.006104
-For N = 1000000, Value is 0.578495. Error = 0.000502
+For N = 100, Value is 0.756653. Error = 0.108012
+For N = 1000, Value is 0.837359. Error = 0.027306
+For N = 10000, Value is 0.868746. Error = 0.004081
+For N = 100000, Value is 0.862611. Error = 0.002054
+For N = 1000000, Value is 0.862637. Error = 0.002028
  
 
 Discussion
